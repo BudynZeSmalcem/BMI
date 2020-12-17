@@ -12,7 +12,7 @@ public class BMI {
         if (weight < 0 || growth < 0 ) {
         return "I don't think so";
         }
-        if (weight == 0 || growth==0){
+         GIT STATUSif (weight == 0 || growth==0){
                 return "do not divide by 0";
             }
 
