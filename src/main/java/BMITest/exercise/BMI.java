@@ -8,18 +8,23 @@ public class BMI {
     // weight or growth < 0? - "I don't think so"
 
     public String checkBmi(int weight, double growth) {
-        double BMI = weight / Math.pow(growth, 2);
-        if (weight < 0 || growth < 0) {
-            return "I don't think so";
-        } else if (weight == 0 || growth == 0) {
-            return "do not divide by 0";
+
+        if (weight < 0 || growth < 0 ) {
+        return "I don't think so";
         }
-        if (BMI < 18.5) {
+        if (weight == 0 || growth==0){
+                return "do not divide by 0";
+            }
+
+        double BMI = weight/Math.pow(growth, 2);
+        if (BMI <= 18.5) {
             return "get some weight";
-        } else if (BMI >= 25) {
-            return "you need to grow";
-        } else {
-            return "good weight";
         }
+        else if (BMI >= 25) {
+            return "you need to grow";
+        }
+        else
+            return "good weight";
+
     }
 }
