@@ -6,7 +6,7 @@ public class BMI {
     // BMI = 25 and higher - "you need to grow"
     // else - "good weight"
     // weight or growth < 0? - "I don't think so"
-//asd
+
     public String checkBmi(int weight, double growth) {
         double BMI = weight / Math.pow(growth, 2);
         if (weight < 0 || growth < 0) {
